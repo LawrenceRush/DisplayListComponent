@@ -15,7 +15,6 @@ public with sharing class ListDisplayController {
         BuilderInterface builder = director.chooseList(recordId);
         
         // Call the build() method on the builder to produce the list
-        system.debug(builder.build());
         return builder.build();
     }
 }
