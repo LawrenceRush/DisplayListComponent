@@ -10,8 +10,6 @@ public with sharing class ListDisplayController {
     @AuraEnabled(cacheable=true)
     public static Object buildList(Id recordId) {
         // Create an instance of the ListDirector
-        system.debug('hello');
-        system.debug(recordId);
         ListDirector director = new ListDirector();
         // Use the director to choose the appropriate list builder based on recordId
         BuilderInterface builder = director.chooseList(recordId);
