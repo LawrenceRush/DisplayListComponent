@@ -1,0 +1,12 @@
+<template>
+    <!-- Lightning Card provides a titled container -->
+    <lightning-card title="People">
+        <!-- Lightning Datatable displays the returned PersonList records -->
+        <lightning-datatable
+            key-field="id"     
+            data={people}    
+            columns={columns}   
+            hide-checkbox-column
+        ></lightning-datatable>
+    </lightning-card>
+</template>
